@@ -1,0 +1,95 @@
+  /* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove default browser margins */
+    padding: 20px; /* Add some padding for better layout */
+    background-color: antiquewhite;
+  }
+  
+  /* Container for the form */
+  .container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Form styling */
+  form {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px; /* Add padding inside the form */
+  }
+  
+  /* Fieldset styling */
+  fieldset {
+    border: none; /* Remove default fieldset border */
+    padding: 10px; /* Add some padding within the fieldset */
+    margin-bottom: 20px; /* Add some space between fieldsets */
+  }
+  
+  /* Legend styling */
+  legend {
+    font-weight: bold;
+    padding: 0 10px; /* Add some padding to the legend */
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 15px; /* Add some space between form groups */
+  }
+  
+  /* Label styling */
+  label {
+    display: block; /* Make labels appear on a new line */
+    margin-bottom: 5px; /* Add some space between label and input */
+  }
+  
+  /* Select element styling */
+  select.form-control {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  
+  /* Input element styling (for tenure) */
+  .form-control[type="number"] {
+    width: 50px; /* Adjust width for tenure input */
+  }
+  
+  /* Submit button styling */
+  button.btn-primary {
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Textarea element styling (for potential results) */
+  .form-control[type="textarea"] {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    resize: none; /* Disable textarea resizing */
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: #f0f0f0; /* Use a light gray background for results */
+  }
+  
+  /* Text area container styling (optional) */
+  .row {
+    margin-top: 20px; /* Add some space above the text area container */
+  }
+  
+  .col-sm-9 {
+    padding-right: 15px; /* Add some padding to the right side */
+  }
+  
+  /* Image styling */
+  .logo {
+    margin: 19px 0; /* Add top and bottom margin to the image */
+    display: block; /* Ensure the image behaves like a block element */
+    width: auto; /* Maintain image aspect ratio */
+    max-width: 600px; /* Set a maximum width for responsiveness */
+  }
+  

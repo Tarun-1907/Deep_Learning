@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Churn Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Churn Prediction</h1>
+	<image src="{{ url_for('static', filename='images/company_logo.jpg')}}" class="logo">
+    <form action="http://localhost:5000/" method="POST">
+      <fieldset class="customer-info">
+        <legend>Customer Information</legend>
+        <div class="form-group">
+          <label for="query1">Senior Citizen:</label>
+          <select class="form-control" id="query1" name="query1" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query4">Gender:</label>
+          <select class="form-control" id="query4" name="query4" autofocus>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query5">Partner:</label>
+          <select class="form-control" id="query5" name="query5" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query6">Dependents:</label>
+          <select class="form-control" id="query6" name="query6" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset class="service-info">
+        <legend>Service Information</legend>
+        <div class="form-group">
+          <label for="query7">Phone Service:</label>
+          <select class="form-control" id="query7" name="query7" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query8">Multiple Lines:</label>
+          <select class="form-control" id="query8" name="query8" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query9">Internet Service:</label>
+          <select class="form-control" id="query9" name="query9" autofocus>
+            <option value="Fiber Optic">Fiber Optic</option>
+            <option value="DSL">DSL</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query10">Online Security:</label>
+          <select class="form-control" id="query10" name="query10" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query11">Online Backup:</label>
+          <select class="form-control" id="query11" name="query11" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query12">Device Protection:</label>
+          <select class="form-control" id="query12" name="query12" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+		<div class="form-group">
+		<label for="query13">Tech Support:</label>
+		<select class="form-control" id="query13" name="query13" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query14">Streaming TV:</label>
+          <select class="form-control" id="query14" name="query14" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query15">Streaming Movies:</label>
+          <select class="form-control" id="query15" name="query15" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query16">Contract:</label>
+          <select class="form-control" id="query16" name="query16" autofocus>
+            <option value="Month-to-month">Month-to-month</option>
+            <option value="One year">One year</option>
+            <option value="Two year">Two year</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query17">Paperless Billing:</label>
+          <select class="form-control" id="query17" name="query17" autofocus>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query18">Payment Method:</label>
+          <select class="form-control" id="query18" name="query18" autofocus>
+            <option value="Electronic check">Electronic check</option>
+            <option value="Credit card">Credit card</option>
+            <option value="Bank transfer">Bank transfer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query19">Tenure (Months):</label>
+          <input type="number" class="form-control" id="query19" name="query19" min="0" autofocus>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-sm-9">
+        <textarea class="form-control" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea>
+        <textarea class="form-control" id="comment" name="query7" rows="2" cols="5" autofocus>{{output2}}</textarea>
+      </div>
+    </div>
+	<p>Here's how you can reduce your customer churn: <a href="https://superoffice.com/blog/reduce-customer-churn/" target="_blank">Reduce Customer Churn</a></p>
+  </div>
+</body>
+</html>
+  
